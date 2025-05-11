@@ -1,0 +1,10 @@
+{
+  "scripts": {
+    "sass:build": "sass --no-source-map scss:css"
+  },
+  "devDependencies": {
+    "@fortawesome/fontawesome-free": "^6.4.0",
+    "bootstrap": "^5.2.3",
+    "sass": "^1.62.0"
+  }
+}
