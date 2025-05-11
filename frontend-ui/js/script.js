@@ -44,3 +44,16 @@ $(document).ready(function () {
     error: () => console.log("Error occur"),
   });
 });
+
+// uploading image to the server
+document.querySelector("form").addEventListener("submit", (e) => {
+  e.preventDefault();
+  formData = new FormData(e.target);
+
+  fetch("http://localhost:8000", {
+    method: "POST",
+    body: formData,
+  });
+
+  alert("File uploaded");
+});
