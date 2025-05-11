@@ -17,6 +17,26 @@
   opacity: 0.8;
 }
 
+@keyframes pulse-border {
+  0% {
+    transform: translateX(-50%) translateY(-50%) translateZ(0) scale(1);
+    opacity: 1;
+  }
+  100% {
+    transform: translateX(-50%) translateY(-50%) translateZ(0) scale(1.5);
+    opacity: 0;
+  }
+}
+.modal-dialog {
+  max-width: 1150px;
+  margin-top: 20px;
+}
+
+.project-modals .modal-dialog {
+  max-width: 1150px;
+  margin-top: 130px;
+}
+
 @media (max-width: 992px) {
   .xl-text {
     font-size: 50px;
@@ -26,9 +46,4 @@
     background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.9)),
       url("../images/pexels-saulo-leite-2.jpg") center center no-repeat;
   }
-}
-
-.project-modals .modal-dialog {
-  max-width: 1150px;
-  margin-top: 130px;
 }
