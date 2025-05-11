@@ -27,3 +27,8 @@
       url("../images/pexels-saulo-leite-2.jpg") center center no-repeat;
   }
 }
+
+.project-modals .modal-dialog {
+  max-width: 1150px;
+  margin-top: 130px;
+}
