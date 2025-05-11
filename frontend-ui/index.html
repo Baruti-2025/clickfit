@@ -83,5 +83,39 @@
         </div>
       </div>
     </header>
+
+    <!-- Image upload -->
+    <section id="solutions" class="solutions my-5">
+      <div class="container">
+        <div class="row mb-4">
+          <div
+            class="col-md-6 offset-md-3 d-flex flex-column align-items-center text-center"
+          >
+            <h5>
+              <span class="badge bg-primary rounded-0 text-uppercase">
+                UPLOAD IMAGES
+              </span>
+            </h5>
+          </div>
+          <form enctype="multipart/form-data">
+            <div class="input-group mb-3">
+              <input
+                type="file"
+                accept="image/jpg,image/png"
+                name="image"
+                required
+                class="form-control"
+              />
+              <button
+                class="btn btn-primary text-white rounded-0"
+                type="submit"
+              >
+                Upload
+              </button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
   </body>
 </html>
