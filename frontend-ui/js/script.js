@@ -30,3 +30,17 @@ function userScroll() {
   });
 }
 document.addEventListener("DOMContentLoaded", userScroll);
+
+// jquery ajax call to the given endpoint
+$(document).ready(function () {
+  $.ajax({
+    type: "GET",
+    url: "http://numbersapi.com/1/30/date?json",
+    success: (data) => {
+      document.getElementById("title-text").innerText = data.text;
+      document.getElementById("number").innerText = data.number;
+      document.getElementById("year").innerText = data.year;
+    },
+    error: () => console.log("Error occur"),
+  });
+});
