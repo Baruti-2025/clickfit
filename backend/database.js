@@ -1,10 +1,13 @@
 import mysql from "mysql";
+import dotenv from "dotenv";
+
+dotenv.config();
 
 const con = mysql.createConnection({
-  host: "localhost",
-  database: "clickfit",
-  user: "root",
-  password: "",
+  host: process.env.HOST,
+  database: process.env.DATABASE,
+  user: process.env.USER,
+  password: process.env.PASSWORD,
 });
 
 // connect to mysql database
